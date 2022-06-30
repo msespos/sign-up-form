@@ -1,17 +1,18 @@
-html, body {
-  background-color: purple;
-  height: 100%;
-} 
-
 @font-face {
   font-family: Enso;
   src: url(enso-font/EnsoBold-Alag.ttf);
 }
 
+html, body {
+  background-color: purple;
+  height: 100%;
+  margin: 0px;
+} 
+
 h2 {
   font-family: Enso;
   color: purple;
-  font-size: xxx-large;
+  font-size: xx-large;
 }
 
 .container {
@@ -23,24 +24,37 @@ h2 {
 .sidebar {
   background-image: url("form-background.jpeg");
   background-size: cover;
-  display:flex;
+  display: flex;
+  flex-direction: column;
   flex-basis: 33%;
 }
 
+.sidebar-top {
+  display: flex;
+  flex-basis: 55%;
+  align-items: center;
+}
+
 .logo-and-title {
+  background-color: aliceblue;
+  opacity: 0.66;
+  display: flex;
+  width: 100%;
+  height: 100px;
   justify-content: center;
   align-items: center;
 }
 
 .logo {
-  opacity: 0.7;
   height: 100px;
 }
 
 .title {
+  display: flex;
   background-color: aliceblue;
-  opacity: 0.7;
-  align-items: center;  
+  height: 100px;
+  padding-left: 10px;
+  align-items: center;
 }
 
 .form {
