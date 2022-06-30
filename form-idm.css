@@ -1,0 +1,44 @@
+html, body {
+  background-image: url("form-background.jpeg");
+  background-color: #cccccc;
+  height: 100%;
+} 
+
+@font-face {
+  font-family: Enso;
+  src: url(enso-font/EnsoBold-Alag.ttf);
+}
+
+h2 {
+  font-family: Enso;
+  color: purple;
+  font-size: xxx-large;
+}
+
+.container {
+  display: flex;
+  border: 3px solid #B22222;
+  height: 100%;
+}
+
+.logo-and-title {
+  display:flex;
+  border: 3px solid #B22222;
+  flex-basis: 33%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo {
+  border: 3px solid #B22222;
+}
+
+.title {
+  border: 3px solid #B22222;
+}
+
+.form {
+  border: 3px solid #B22222;
+  flex-basis: 67%;
+}
