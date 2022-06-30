@@ -1,5 +1,48 @@
-.form-text { 
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: x-large;
+html, body {
+  background-color: purple;
+  height: 100%;
+} 
+
+@font-face {
+  font-family: Enso;
+  src: url(enso-font/EnsoBold-Alag.ttf);
+}
+
+h2 {
+  font-family: Enso;
   color: purple;
+  font-size: xxx-large;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  /* border: 3px solid #B22222; */
+}
+
+.sidebar {
+  background-image: url("form-background.jpeg");
+  background-size: cover;
+  display:flex;
+  flex-basis: 33%;
+}
+
+.logo-and-title {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  opacity: 0.7;
+  height: 100px;
+}
+
+.title {
+  background-color: aliceblue;
+  opacity: 0.7;
+  align-items: center;  
+}
+
+.form {
+  flex-basis: 67%;
 }
