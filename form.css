@@ -21,6 +21,10 @@ input {
   border-radius: 5px;
 }
 
+input:focus {
+  box-shadow: 0px 4px 4px hsl(0deg 0% 0% / 0.28);
+}
+
 .container {
   display: flex;
   height: 100%;
@@ -78,7 +82,7 @@ input {
 
 .form-text {
   /* border: 3px solid #B22222; */
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
   display: flex;
   flex: 5;
 }
@@ -92,11 +96,8 @@ input {
 }
 
 .form-main {
-  background-color: rgb(250, 250, 250);
-  box-shadow: 0 4px 2px -2px gray;
-  display: flex;
-  flex-direction: column;
-  flex: 4;
+  background-color: rgb(252, 252, 252);
+  flex: 5;
 }
 
 .form-call-to-action {
@@ -112,6 +113,8 @@ input {
   justify-content: space-around;
   height: 200px;
   padding: 20px;
+  box-shadow: 0px 4px 4px hsl(0deg 0% 0% / 0.28);
+  position: relative;
 }
 
 .form-fields-row {
@@ -129,6 +132,30 @@ input {
 }
 
 .form-submit {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
   flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button[type=submit] {
+  background-color: purple;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 25px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-subtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0px 50px;
 }
