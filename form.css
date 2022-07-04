@@ -10,7 +10,7 @@ html, body {
 }
 
 h2 {
-  font-family: Enso;
+  font-family: Enso, Arial, Helvetica, sans-serif;
   color: purple;
   font-size: xx-large;
 }
@@ -89,7 +89,7 @@ input:focus {
 
 .form-text span {
   align-self: flex-end;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Enso, Arial, Helvetica, sans-serif;
   font-size: x-large;
   font-weight: bold;
   padding: 50px;
@@ -101,7 +101,7 @@ input:focus {
 }
 
 .form-call-to-action {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Enso, Arial, Helvetica, sans-serif;
   font-size:x-large;
   font-weight: bold;
   padding: 20px 50px 0px;
@@ -147,6 +147,7 @@ button[type=submit] {
   background-color: purple;
   color: white;
   padding: 15px 32px;
+  font-family: Enso, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bold;
   margin: 25px 50px;
@@ -155,7 +156,7 @@ button[type=submit] {
 }
 
 .button-subtext {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Enso, Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin: 0px 50px;
 }
