@@ -7,7 +7,7 @@ html, body {
   background-color: purple;
   height: 100%;
   margin: 0px;
-} 
+}
 
 h2 {
   font-family: Enso;
@@ -15,10 +15,15 @@ h2 {
   font-size: xx-large;
 }
 
+input {
+  line-height: 28px;
+  width: 250px;
+  border-radius: 5px;
+}
+
 .container {
   display: flex;
   height: 100%;
-  /* border: 3px solid #B22222; */
 }
 
 .sidebar {
@@ -26,7 +31,7 @@ h2 {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  flex-basis: 33%;
+  flex: 1;
 }
 
 .sidebar-top {
@@ -39,10 +44,10 @@ h2 {
   background-color: aliceblue;
   opacity: 0.66;
   display: flex;
-  width: 100%;
-  height: 100px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100px;  
 }
 
 .logo {
@@ -50,12 +55,80 @@ h2 {
 }
 
 .title {
-  display: flex;
   background-color: aliceblue;
-  height: 100px;
+  display: flex;
   align-items: center;
+  height: 100px;
+}
+
+.form-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
 }
 
 .form {
-  flex-basis: 67%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 90%;
+  height: 90%;
+}
+
+.form-text {
+  /* border: 3px solid #B22222; */
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex: 5;
+}
+
+.form-text span {
+  align-self: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.form-main {
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 2px -2px gray;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+
+.form-call-to-action {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:x-large;
+  font-weight: bold;
+  padding: 20px 50px 0px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  padding: 20px;
+}
+
+.form-fields-row {
+  display: flex;
+}
+
+.form-field {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.25ch;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.form-submit {
+  background-color: rgb(240, 240, 240);
+  flex: 5;
 }
