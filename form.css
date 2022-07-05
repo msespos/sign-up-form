@@ -72,8 +72,9 @@ input:focus {
   flex: 2;
 }
 
-.form {
-  background-color: rgb(255, 255, 255);
+.form-container {
+  /* border: 3px solid #B22222; */
+  background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
   flex-basis: 90%;
@@ -81,10 +82,7 @@ input:focus {
 }
 
 .form-text {
-  /* border: 3px solid #B22222; */
-  background-color: rgb(245, 245, 245);
   display: flex;
-  flex: 5;
 }
 
 .form-text span {
@@ -97,7 +95,6 @@ input:focus {
 
 .form-main {
   background-color: rgb(252, 252, 252);
-  flex: 5;
 }
 
 .form-call-to-action {
@@ -132,8 +129,6 @@ input:focus {
 }
 
 .form-submit {
-  background-color: rgb(245, 245, 245);
-  flex: 5;
   display: flex;
   flex-direction: column;
 }
