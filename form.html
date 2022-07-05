@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="form.css">
+    <script>
+        // this function adapted from https://www.geeksforgeeks.org/password-matching-using-javascript/
+        function checkPassword(form) {
+            password = form.password.value;
+            confirmPassword = form.confirmPassword.value;
+            if (password != confirmPassword) {
+                alert ("\nPasswords did not match! Please try again.")
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -23,7 +37,7 @@
       </div>
       <div class="form-outline">
         <div class="form-container">
-          <form>
+          <form onSubmit="return checkPassword(this)">
             <div class="form-text">
               <span><em>Sign up here</em> to receive access to everything that is Blanket Forts Media.
               We've got you covered, from IDM recommendations to streaming DJ sets to blog posts and more.<br><br>
@@ -34,32 +48,32 @@
               <div class="form-fields">
                 <div class="form-fields-row">
                   <div class="form-field">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName">
+                    <label for="firstName">*FIRST NAME</label>
+                    <input type="text" id="firstName" required>
                   </div>
                   <div class="form-field">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" height="20">
-                  </div>
-                </div>
-                <div class="form-fields-row">
-                  <div class="form-field">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email">
-                  </div>
-                  <div class="form-field">
-                    <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="text" id="phoneNumber">
+                    <label for="lastName">*LAST NAME</label>
+                    <input type="text" id="lastName" required>
                   </div>
                 </div>
                 <div class="form-fields-row">
                   <div class="form-field">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password">
+                    <label for="email">*EMAIL</label>
+                    <input type="email" id="email" required>
                   </div>
                   <div class="form-field">
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassword">
+                    <label for="phoneNumber">*PHONE NUMBER</label>
+                    <input type="text" id="phoneNumber" placeholder="XXXXXXXXXX" pattern="\d{10}" required>
+                  </div>
+                </div>
+                <div class="form-fields-row">
+                  <div class="form-field">
+                    <label for="password">*PASSWORD (>= 6 CHARS)</label>
+                    <input type="password" id="password" required minlength=6>
+                  </div>
+                  <div class="form-field">
+                    <label for="confirmPassword">*CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" required minlength=6>
                   </div>
                 </div>
               </div>
