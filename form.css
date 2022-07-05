@@ -4,7 +4,7 @@
 }
 
 html, body {
-  background-color: purple;
+  background-color: rgb(245, 245, 245);
   height: 100%;
   margin: 0px;
 }
@@ -36,6 +36,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   flex: 1;
+  height: 100%;
 }
 
 .sidebar-top {
@@ -77,11 +78,11 @@ input:focus {
   background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
-  flex-basis: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .form-text {
+  background-color: rgb(245, 245, 245);
   display: flex;
 }
 
@@ -90,7 +91,7 @@ input:focus {
   font-family: Enso, Arial, Helvetica, sans-serif;
   font-size: x-large;
   font-weight: bold;
-  padding: 50px;
+  padding: 125px 50px 50px;
 }
 
 .form-main {
@@ -129,8 +130,10 @@ input:focus {
 }
 
 .form-submit {
+  background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
+  padding: 20px 0px 120px;
 }
 
 .button-container {
